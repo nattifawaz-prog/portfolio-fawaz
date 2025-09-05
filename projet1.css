@@ -1,0 +1,138 @@
+:root {
+  --bleu-nuit: #0f172a;
+  --turquoise-clair: #00c9c8;
+  --turquoise-hover: #00a2a1;
+  --violet-pastel: #c2b6ff;
+  --blanc: #ffffff;
+  --gris-foncé: #1e293b;
+  --ombre-carte: rgba(0, 172, 193, 0.25);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #0e1a24;
+  margin: 0;
+  padding: 0;
+}
+
+.grande-carte {
+  display: flex;
+  flex-direction: row;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px var(--ombre-carte);
+  margin: 40px auto;
+  max-width: 1000px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grande-carte:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px var(--ombre-carte);
+}
+
+.contenu-carte {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titre-calculateur {
+  font-size: 1.8rem;
+  color: var(--turquoise-clair);
+  margin-bottom: 20px;
+}
+
+.form-calculateur {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.champ {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #00c9c8;
+}
+
+input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #c7c4c4;
+  color: rgb(29, 29, 29);
+  border: 1px solid #02a0a0;
+}
+
+.bouton-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn-action {
+  background-color: var(--turquoise-clair);
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-action:hover {
+  background-color: var(--turquoise-hover);
+}
+
+.resultats {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  background-color: #f8fafc;
+  color: #0e1a24;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px #00c9c8;
+}
+
+.resultats p {
+  margin: 8px 0;
+}
+
+.illustration-carte {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration-carte img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-left: 2px solid var(--turquoise-clair);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

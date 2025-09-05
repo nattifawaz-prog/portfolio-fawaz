@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculateur de Prêt</title>
+  <link rel="stylesheet" href="projet1.css">
+</head>
+<body>
+
+  <main>
+    <section id="projet1" class="grande-carte carte-calculateur fade-in">
+      <div class="contenu-carte">
+        <h1 class="titre-calculateur">Calculateur de Prêt</h1>
+        <p>Entrez les données de votre prêt pour obtenir vos mensualités et le coût total du crédit.</p>
+
+        <form id="form-pret" class="form-calculateur">
+          <div class="champ">
+            <label for="montant">Montant du prêt (Fcfa)</label>
+            <input type="number" id="montant" required>
+          </div>
+
+          <div class="champ">
+            <label for="taux">Taux d’intérêt annuel (%)</label>
+            <input type="number" id="taux" step="0.01" required>
+          </div>
+
+          <div class="champ">
+            <label for="duree">Durée du prêt (années)</label>
+            <input type="number" id="duree" required>
+          </div>
+
+          <div class="bouton-wrapper">
+            <button type="submit" class="btn-action">Calculer</button>
+          </div>
+        </form>
+
+        <div id="resultats" class="resultats">
+          <p><strong>Mensualité :</strong> <span id="mensualite">–</span> Fcfa</p>
+          <p><strong>Coût total du crédit :</strong> <span id="total">–</span> Fcfa</p>
+        </div>
+      </div>
+
+      <div class="illustration-carte">
+        <img src="/acceuil_principale/ressources de mon site/image projet1.jpg" alt="Illustration du projet 1">
+      </div>
+    </section>
+  </main>
+
+  <script src="projet1.js"></script>
+</body>
+</html>

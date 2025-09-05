@@ -1,0 +1,621 @@
+/* Palette */
+:root {
+  --bleu-nuit: #1a1f2b;
+  --turquoise-clair: #e0f7fa;
+  --turquoise-hover: #26c6da;
+  --accent: #00acc1;
+}
+
+/* Police + décalage du contenu */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding-top: 100px;
+  background-color: #ffffff;
+  color: var(--turquoise-clair);
+}
+
+/* En-tête fixe du site */
+
+.header-fixe {
+  margin: 0;
+}
+
+/* Barre d’en-tête fixe du site */
+.barre-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px;
+  background-color: var(--bleu-nuit);
+  box-shadow: 0 4px 8px rgba(0, 172, 193, 0.2);
+  flex-wrap: wrap;
+}
+
+/* Identité : nom et prénom */
+.identite {
+  font-size: 32px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.identite .nom {
+  color: var(--accent);
+  margin-right: 6px;
+}
+
+.identite .prenom {
+  color: var(--turquoise-clair);
+}
+
+/* affichage des éléments de navigation */
+.nav {
+  display: flex;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* affichage des liens de navigation */
+.nav a {
+  position: relative;
+  color: var(--turquoise-clair);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 4px 6px;
+  transition: color 0.3s ease;
+}
+
+/* Soulignement fluide + glow turquoise */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--turquoise-hover);
+  transition: width 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--turquoise-hover);
+  text-shadow: 0 0 8px var(--turquoise-hover);
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* Espacement quadruplé pour le lien Contact : pour éviter le débordement */
+.nav li:last-child {
+  margin-right: 112px;
+}
+
+
+/* Bloc - 1 - accueil du site */
+
+.section-intro {
+  background-color: #fff;
+  padding: 100px 40px;
+  color: #1a1f2b;
+}
+
+.contenu-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.bloc-texte {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.titre-intro {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.accent {
+  color: #00acc1;
+  font-weight: 700;
+}
+
+.btn-intro {
+  display: inline-block;
+  background-color: #00acc1;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-intro:hover {
+  background-color: #26c6da;
+  box-shadow: 0 0 10px #26c6da;
+}
+
+.bloc-image {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.bloc-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* bloc - 2 - Section À propos */
+
+.bloc-a-propos {
+  background-color: #f2f2f2;
+  color: #1a1f2b;
+  padding: 100px 0;
+}
+
+/* Titre centré */
+.titre-section {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #00acc1;
+}
+
+/* Contenu horizontal aligné */
+.contenu-a-propos {
+  display: flex;
+  flex-direction: row; /* Horizontal */
+  align-items: center; /* Aligné sur la même ligne */
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Texte collé au bord gauche */
+.texte-cv {
+  flex: 1 1 55%;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.texte-a-propos {
+  font-size: 20px; /* ✅ Taille augmentée */
+  line-height: 1.8;
+  margin-bottom: 30px;
+  max-width: 800px;
+}
+
+/* Accent sur developpement web */
+.accent1 {
+  color: #00acc1;
+  font-weight: 700;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* 📎 Bouton CV avec animation */
+.btn-cv {
+  display: inline-block;
+  background-color: #00acc1;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-cv:hover {
+  background-color: #26c6da;
+  box-shadow: 0 0 10px #26c6da;
+}
+
+/* 🖼️ Image alignée à droite */
+.illustration-droite {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 240px; /* ✅ Distance quadruplée avec le bord droit */
+}
+
+/* 🎯 Image en cercle */
+.cercle-image {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 172, 193, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cercle-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 172, 193, 0.5);
+}
+
+.cercle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* action à propos */
+
+.actions-a-propos {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Bouton CV déjà stylé */
+.btn-cv {
+  background-color: #00acc1;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-cv:hover {
+  background-color: #26c6da;
+  box-shadow: 0 0 10px #26c6da;
+}
+
+/* Lien "En savoir plus" avec du style */
+.lien-en-savoir-plus {
+  color: #058d97;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.lien-en-savoir-plus:hover {
+  color: #69e6fc;
+  
+  border-color: #02979c;
+}
+
+
+/* Bloc - 3 - section projet */
+
+/* 🧱 Section Mes Projets */
+.section-projets {
+  background-color: #fff;
+  color: #1a1f2b;
+  padding: 100px 0;
+}
+
+/* 🏷️ Titre centré */
+.titre-section {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #00acc1;
+}
+
+/* 📦 Conteneur des cartes */
+.cartes-projets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 40px;
+}
+
+/* 📦 Carte individuelle agrandie et centrée */
+.carte-projet {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  width: 400px;               /* ✅ Largeur augmentée */
+  height: 320px;              /* ✅ Hauteur augmentée */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    /* ✅ Centrage vertical */
+  align-items: center;        /* ✅ Centrage horizontal */
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 172, 193, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carte-projet:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 172, 193, 0.2);
+}
+
+/* 📝 Description centrée */
+.description-projet {
+  font-size: 20px;            /* ✅ Taille augmentée */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 90%;
+}
+
+/* 🏷️ Tags simples */
+.tags-projet {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #00acc1;
+}
+
+/* ✅ Bouton Voir avec style cohérent */
+.btn-voir {
+  background-color: #00acc1; /* ✅ Couleur unifiée avec les autres boutons */
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-voir:hover {
+  background-color: #26c6da;
+  box-shadow: 0 0 10px #26c6da;
+}
+
+/* Bloc - 4 - compétences */ 
+
+.section-competences {
+  background-color: #f9fafa;
+  padding: 100px 40px;
+  color: #1a1f2b;
+}
+
+.titre-competences {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #00acc1;
+}
+
+/* 📦 Cartes de compétences */
+.contenu-competences {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.carte-competence {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 172, 193, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.carte-competence:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 172, 193, 0.3);
+}
+
+.categorie {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1a1f2b;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+/* 📊 Barres de progression */
+.barre {
+  background-color: #e0e0e0;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.niveau {
+  height: 100%;
+  background-color: #00acc1;
+  transition: width 0.6s ease;
+  box-shadow: 0 0 8px rgba(0, 172, 193, 0.4);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .contenu-competences {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carte-competence {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+
+/* Bloc - 5 - section contact */
+
+.section-contact {
+  padding: 40px 20px;
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.titre-section {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.blanc {
+  color: #fff;
+}
+
+.accent {
+  color: #5ac8fa;
+}
+
+.formulaire-contact {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ligne-nom-prenom {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.champ {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #faf6f6;
+  color: #7a7979;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aaa;
+}
+
+.bouton-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-contact {
+  background: linear-gradient(135deg, #5ac8fa, #9be2fe);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(90, 250, 223, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-contact:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(90, 250, 223, 0.5);
+  background: linear-gradient(135deg, #00eeff, #9beafe);
+}
+
+.message-feedback {
+  margin-top: 12px;
+  font-size: 1rem;
+  text-align: center;
+  color: #5ac8fa;
+}
+
+
+/* footer - pied de page du site */
+
+.footer {
+  background-color: #f5f5f5;
+  border-top: 2px solid #121212;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #121212;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left a {
+  color: #00e5ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-left a:hover {
+  color: #1de9b6;
+}
+
+.footer-right span {
+  font-weight: 600;
+}
+
+/* effet de sroll fluide avec surbrillance */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav a.active {
+  color: var(--turquoise-hover);
+  text-shadow: 0 0 8px var(--turquoise-hover);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Guide de Tri des Déchets</title>
+        <link rel="stylesheet" href="projet4.css">
+    </head>
+    <body>
+    <main class="container">
+
+        <!-- Carte principale : Recherche -->
+        <section class="carte fade-in">
+            <div class="contenu">
+            <h2>Guide de Tri des Déchets</h2>
+            <p>Entrez le nom d'un objet pour savoir dans quelle poubelle le jeter.</p>
+
+            <div class="formulaire">
+                <input type="text" id="objet" placeholder="Ex : bouteille en plastique">
+                <button onclick="chercherPoubelle()">Vérifier</button>
+            </div>
+
+            <div id="resultat" class="resultat">
+                <!-- Résultat affiché ici -->
+            </div>
+            </div>
+
+            <div class="illustration">
+            <img src="/acceuil_principale/ressources de mon site/img tri de dechets.jpg" alt="Illustration tri des déchets">
+            </div>
+        </section>
+
+        <!-- Carte secondaire : Liste des objets reconnus -->
+        <section class="carte-secondaire">
+        <h2>Exemple d'objets à trier</h2>
+        <ul class="liste-tri">
+            <li><strong>Bouteille en plastique</strong></li>
+            <li><strong>Boîte de conserve</strong></li>
+            <li><strong>Carton de pizza</strong></li>
+            <li><strong>Bouteille en verre</strong></li>
+            <li><strong>Journal</strong></li>
+            <li><strong>Canette</strong></li>
+            <li><strong>Sachet plastique</strong></li>
+            <li><strong>Restes alimentaires</strong></li>
+            <li><strong>Papier</strong></li>
+            <li><strong>Pot de yaourt</strong></li>
+            <li><strong>Verre cassé</strong></li>
+            <li><strong>Emballage carton</strong></li>
+            <li><strong>Canette de soda</strong></li>
+            <li><strong>Sac en papier</strong></li>
+        </ul>
+
+        <!-- Emplacement image 2 -->
+        <div class="image-zone">
+            <img src="/acceuil_principale/ressources de mon site/img exple tri.jpg" alt="Exemples de déchets triés" />
+        </div>
+        </section>
+
+    </main>
+
+    <script src="projet4.js"></script>
+    </body>
+</html>

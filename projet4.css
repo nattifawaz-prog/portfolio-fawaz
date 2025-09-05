@@ -1,0 +1,141 @@
+:root {
+  --fond: #f0f4f8;
+  --carte: #ffffff;
+  --accent: #00c9c8;
+  --texte: #1a1f2b;
+  --ombre: rgba(0, 172, 193, 0.2);
+  --jaune: #f1c40f;
+  --vert: #2ecc71;
+  --bleu: #3498db;
+  --gris: #7f8c8d;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--fond);
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.carte {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  background: var(--carte);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px var(--ombre);
+  max-width: 1000px;
+  width: 100%;
+}
+
+.contenu {
+  flex: 2;
+}
+
+.illustration {
+  flex: 1;
+  text-align: center;
+}
+
+.illustration img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 172, 193, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.illustration img:hover {
+  transform: scale(1.03);
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 2rem;
+  color: var(--texte);
+}
+
+.formulaire {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #00a2a1;
+}
+
+.resultat {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #ecf0f1;
+  box-shadow: inset 0 0 10px var(--ombre);
+  color: var(--texte);
+}
+
+.resultat.jaune { background: var(--jaune); color: #fff; }
+.resultat.vert { background: var(--vert); color: #fff; }
+.resultat.bleu { background: var(--bleu); color: #fff; }
+.resultat.gris { background: var(--gris); color: #fff; }
+
+/* 📋 Liste des objets */
+.liste-tri {
+  list-style: none;
+  padding: 0;
+}
+
+.liste-tri li {
+  margin-bottom: 0.8rem;
+  padding: 0.6rem;
+  background-color: #f9f9fc;
+  border-left: 6px solid #eee;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.liste-tri li:hover {
+  background-color: #eef2f7;
+}
+
+/* 🖼️ Zone image */
+.image-zone {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.image-zone img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}

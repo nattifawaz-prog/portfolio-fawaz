@@ -1,0 +1,121 @@
+/* --- FOND GLOBAL --- */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* --- SECTION CENTRALE --- */
+.section-contact-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* --- CARTE --- */
+.carte-reseaux {
+  background: linear-gradient(135deg, #e3e0ff, #d0f0ff);
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.carte-reseaux:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(74, 20, 140, 0.3);
+}
+
+/* --- TITRE --- */
+.carte-reseaux h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #4a148c;
+  transition: color 0.3s ease;
+}
+
+.carte-reseaux:hover h1 {
+  color: #7a3a80;
+}
+
+/* --- LIGNES --- */
+.ligne-reseau {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+/* --- ICÔNES --- */
+.icone-reseau {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+/* --- BOUTONS --- */
+.btn-reseau {
+  flex-grow: 1;
+  background-color: transparent;
+  border: 2px solid #4a148c;
+  color: #4a148c;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- TEXTE CENTRÉ --- */
+.btn-reseau span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* --- EFFET DRILLANT --- */
+.btn-reseau::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(120deg, #4a148c 0%, #fa95fa 100%);
+  opacity: 0.1;
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+}
+
+.btn-reseau:hover::before {
+  left: 0;
+  opacity: 0.2;
+}
+
+/* --- HOVER --- */
+.btn-reseau:hover {
+  background-color: #4a148c;
+  color: white;
+}
+
+.btn-reseau:hover span {
+  transform: scale(1.05);
+}
+
+/* --- ICÔNE ANIMATION --- */
+.ligne-reseau:hover .icone-reseau {
+  transform: scale(1.2) rotate(-5deg);
+}

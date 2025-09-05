@@ -1,0 +1,235 @@
+/* Palette */
+:root {
+  --bleu-nuit: #1a1f2b;
+  --turquoise-clair: #e0f7fa;
+  --turquoise-hover: #26c6da;
+  --accent: #00acc1;
+}
+
+/* Police + décalage du contenu */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding-top: 100px;
+  background-color: #ffffff;
+  color: var(--turquoise-clair);
+}
+
+/* En-tête fixe du site */
+
+.header-fixe {
+  margin: 0;
+}
+
+/* Barre d’en-tête fixe du site */
+.barre-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px;
+  background-color: var(--bleu-nuit);
+  box-shadow: 0 4px 8px rgba(0, 172, 193, 0.2);
+  flex-wrap: wrap;
+}
+
+/* Identité : nom et prénom */
+.identite {
+  font-size: 32px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.identite .nom {
+  color: var(--accent);
+  margin-right: 6px;
+}
+
+.identite .prenom {
+  color: var(--turquoise-clair);
+}
+
+/* affichage des éléments de navigation */
+.nav {
+  display: flex;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* affichage des liens de navigation */
+.nav a {
+  position: relative;
+  color: var(--turquoise-clair);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 4px 6px;
+  transition: color 0.3s ease;
+}
+
+/* Soulignement fluide + glow turquoise */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--turquoise-hover);
+  transition: width 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--turquoise-hover);
+  text-shadow: 0 0 8px var(--turquoise-hover);
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* 📏 Espacement quadruplé pour le lien Contact : pour éviter le débordement */
+.nav li:last-child {
+  margin-right: 112px; /* ✅ 4x plus que les autres (28px × 4) */
+}
+
+.cartes-verticales {
+  display: flex;
+  flex-direction: column;
+  gap: 60px; /* ↗️ Espacement plus généreux entre les cartes */
+  padding: 80px 30px;
+  max-width: 1400px; /* ↗️ Largeur augmentée */
+  margin: auto;
+}
+
+.grande-carte {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 172, 193, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 500px; /* ↗️ Hauteur augmentée */
+}
+
+.grande-carte:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 140, 255, 0.35);
+}
+
+.contenu-carte {
+  flex: 1;
+  padding: 50px;
+  color: var(--bleu-nuit);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenu-carte h3 {
+  font-size: 2rem; /* ↗️ Titre plus imposant */
+  margin-bottom: 16px;
+  color: var(--accent);
+}
+
+.contenu-carte p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.btn-action {
+  align-self: start;
+  padding: 14px 28px;
+  background: linear-gradient(45deg, var(--accent), var(--turquoise-hover));
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-action:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 24px rgba(0, 255, 255, 0.6);
+}
+
+.illustration-carte {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.illustration-carte img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.illustration-carte img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2) saturate(1.1);
+}
+
+/* footer - pied de page du site */
+
+.footer {
+  background-color: #f5f5f5;
+  border-top: 2px solid #ffffff;
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #707070;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left a {
+  color: #03e0f8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-left a:hover {
+  color: #1de9b6;
+}
+
+.footer-right span {
+  font-weight: 600;
+}
+
+/* effet de sroll fluide avec surbrillance */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav a.active {
+  color: var(--turquoise-hover);
+  text-shadow: 0 0 8px var(--turquoise-hover);
+}

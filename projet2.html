@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planificateur de Budget</title>
+  <link rel="stylesheet" href="projet2.css">
+</head>
+<body>
+
+<main>
+  <section class="carte fade-in">
+    <h2>Planificateur de Budget</h2>
+    <p>Sur cette page, vous suivez vos revenus, vos dépenses et votre solde rapidement en temps réel.</p>
+
+    <div class="colonnes">
+      <!-- Revenus -->
+      <div class="colonne">
+        <h3 class="titre vert">Revenus</h3>
+        <div id="revenus" class="liste">
+          <div class="ligne">
+            <span>Salaire</span>
+            <input type="number" class="champ revenu" value="">
+          </div>
+          <div class="ligne">
+            <span>Freelance</span>
+            <input type="number" class="champ revenu" value="">
+          </div>
+          <div class="ligne">
+            <span>Investissements</span>
+            <input type="number" class="champ revenu" value="">
+          </div>
+          <div class="ligne">
+            <span>Dons reçus</span>
+            <input type="number" class="champ revenu" value="">
+          </div>
+          <div class="ligne">
+            <span>Allocations de reçus</span>
+            <input type="number" class="champ revenu" value="">
+          </div>
+        </div>
+        <button onclick="ajouterChamp('revenus')" class="btn vert">+ Ajouter un revenu</button>
+      </div>
+
+      <!-- Séparateur lumineux -->
+      <div class="separateur"></div>
+
+      <!-- Dépenses -->
+      <div class="colonne">
+        <h3 class="titre rouge">Dépenses</h3>
+        <div id="depenses" class="liste">
+          <div class="ligne">
+            <span>Loyer</span>
+            <input type="number" class="champ depense" value="">
+          </div>
+          <div class="ligne">
+            <span>Courses</span>
+            <input type="number" class="champ depense" value="">
+          </div>
+          <div class="ligne">
+            <span>Charges</span>
+            <input type="number" class="champ depense" value="">
+          </div>
+          <div class="ligne">
+            <span>Transport</span>
+            <input type="number" class="champ depense" value="">
+          </div>
+          <div class="ligne">
+            <span>Loisirs</span>
+            <input type="number" class="champ depense" value="">
+          </div>
+        </div>
+        <button onclick="ajouterChamp('depenses')" class="btn rouge">+ Ajouter une dépense</button>
+      </div>
+    </div>
+
+    <!-- Solde centré -->
+    <div class="solde">
+      <h3>Solde restant : <span id="solde"></span> Fcfa</h3>
+    </div>
+  </section>
+</main>
+
+<script src="projet2.js"></script>
+</body>
+</html>
