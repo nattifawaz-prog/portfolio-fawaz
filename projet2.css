@@ -37,6 +37,8 @@ body {
   animation: fadeIn 1s forwards;
 }
 
+/* petite animation */
+
 @keyframes fadeIn {
   to { opacity: 1; }
 }
@@ -146,31 +148,4 @@ h3 {
   margin-top: 3rem;
   color: var(--bleu-nuit);
   box-shadow: inset 0 0 10px var(--ombre-carte);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .colonnes {
-    flex-direction: column;
-  }
-
-  .separateur {
-    height: 4px;
-    width: 100%;
-    margin: 1rem 0;
-    background: linear-gradient(to right, #00c9c8, #2ecc71);
-  }
-
-  .champ {
-    width: 100%;
-  }
-
-  .ligne {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .ligne span {
-    margin-bottom: 0.5rem;
-  }
 }
