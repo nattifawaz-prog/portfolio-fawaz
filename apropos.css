@@ -1,4 +1,4 @@
-
+/* Style d'affichage de la page web */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #e2eaf5f1;
@@ -6,6 +6,8 @@ body {
   padding: 0;
   color: #333;
 }
+
+/* style appliqué a la carte titre de la page */
 
 .carte-titre {
   background: linear-gradient(135deg, #445e61, #fdfdfd);
@@ -32,11 +34,14 @@ body {
   max-width: 700px;
 }
 
+/* animation appliché à la carte-titre de la page */
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* style appliqué aux catres aux cartes */
 .cartes-section {
   max-width: 900px;
   margin: 0 auto;
@@ -75,6 +80,8 @@ body {
   line-height: 1.6;
 }
 
+/* style appliqué au bouton retour */
+
 .btn-retour {
   display: inline-block;
   margin-top: 40px;
@@ -88,22 +95,4 @@ body {
 
 .btn-retour:hover {
   background-color: #023e8a;
-}
-
-@media (max-width: 600px) {
-  .carte {
-    padding: 15px;
-  }
-
-  .cartes-section h2 {
-    font-size: 1.8em;
-  }
-
-  .carte h3 {
-    font-size: 1.2em;
-  }
-
-  .carte p {
-    font-size: 0.95em;
-  }
 }
