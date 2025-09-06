@@ -207,7 +207,7 @@ body {
 }
 
 .texte-a-propos {
-  font-size: 20px; /* ✅ Taille augmentée */
+  font-size: 20px; /* Taille augmentée */
   line-height: 1.8;
   margin-bottom: 30px;
   max-width: 800px;
@@ -220,7 +220,7 @@ body {
   transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
-/* 📎 Bouton CV avec animation */
+/* Bouton CV avec animation */
 .btn-cv {
   display: inline-block;
   background-color: #00acc1;
@@ -238,16 +238,16 @@ body {
   box-shadow: 0 0 10px #26c6da;
 }
 
-/* 🖼️ Image alignée à droite */
+/* Image alignée à droite */
 .illustration-droite {
   flex: 1 1 35%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 240px; /* ✅ Distance quadruplée avec le bord droit */
+  padding-right: 240px; /* Distance quadruplée avec le bord droit */
 }
 
-/* 🎯 Image en cercle */
+/* Image en cercle */
 .cercle-image {
   width: 380px;
   height: 380px;
@@ -314,14 +314,14 @@ body {
 
 /* Bloc - 3 - section projet */
 
-/* 🧱 Section Mes Projets */
+/* Section Mes Projets */
 .section-projets {
   background-color: #fff;
   color: #1a1f2b;
   padding: 100px 0;
 }
 
-/* 🏷️ Titre centré */
+/* Titre centré */
 .titre-section {
   font-size: 36px;
   font-weight: 700;
@@ -330,7 +330,7 @@ body {
   color: #00acc1;
 }
 
-/* 📦 Conteneur des cartes */
+/* Conteneur des cartes */
 .cartes-projets {
   display: flex;
   flex-wrap: wrap;
@@ -339,16 +339,16 @@ body {
   padding: 0 40px;
 }
 
-/* 📦 Carte individuelle agrandie et centrée */
+/* Carte individuelle agrandie et centrée */
 .carte-projet {
   background-color: #f2f2f2;
   border-radius: 12px;
-  width: 400px;               /* ✅ Largeur augmentée */
-  height: 320px;              /* ✅ Hauteur augmentée */
+  width: 400px;               /* Largeur augmentée */
+  height: 320px;              /* Hauteur augmentée */
   display: flex;
   flex-direction: column;
-  justify-content: center;    /* ✅ Centrage vertical */
-  align-items: center;        /* ✅ Centrage horizontal */
+  justify-content: center;    /* Centrage vertical */
+  align-items: center;        /* Centrage horizontal */
   text-align: center;
   padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 172, 193, 0.1);
@@ -360,15 +360,15 @@ body {
   box-shadow: 0 8px 20px rgba(0, 172, 193, 0.2);
 }
 
-/* 📝 Description centrée */
+/* Description centrée */
 .description-projet {
-  font-size: 20px;            /* ✅ Taille augmentée */
+  font-size: 20px;            /* Taille augmentée */
   line-height: 1.6;
   margin-bottom: 20px;
   max-width: 90%;
 }
 
-/* 🏷️ Tags simples */
+/* Tags simples */
 .tags-projet {
   display: flex;
   gap: 12px;
@@ -378,9 +378,9 @@ body {
   color: #00acc1;
 }
 
-/* ✅ Bouton Voir avec style cohérent */
+/* Bouton Voir avec style cohérent */
 .btn-voir {
-  background-color: #00acc1; /* ✅ Couleur unifiée avec les autres boutons */
+  background-color: #00acc1; /* Couleur unifiée avec les autres boutons */
   color: #fff;
   padding: 14px 28px;
   border-radius: 6px;
@@ -411,7 +411,7 @@ body {
   color: #00acc1;
 }
 
-/* 📦 Cartes de compétences */
+/* Cartes de compétences */
 .contenu-competences {
   display: flex;
   flex-wrap: wrap;
@@ -451,7 +451,7 @@ body {
   margin-bottom: 6px;
 }
 
-/* 📊 Barres de progression */
+/* Barres de progression */
 .barre {
   background-color: #e0e0e0;
   height: 10px;
@@ -465,20 +465,6 @@ body {
   transition: width 0.6s ease;
   box-shadow: 0 0 8px rgba(0, 172, 193, 0.4);
 }
-
-/* 📱 Responsive */
-@media (max-width: 768px) {
-  .contenu-competences {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .carte-competence {
-    width: 100%;
-    max-width: 500px;
-  }
-}
-
 
 /* Bloc - 5 - section contact */
 
@@ -619,3 +605,4 @@ html {
   color: var(--turquoise-hover);
   text-shadow: 0 0 8px var(--turquoise-hover);
 }
+
