@@ -1,3 +1,5 @@
+// fonction :  création de nouveaux champs pour ajouter des données de dépenses et de revenus
+
 function ajouterChamp(sectionId) {
   const container = document.getElementById(sectionId);
   const ligne = document.createElement("div");
@@ -11,12 +13,14 @@ function ajouterChamp(sectionId) {
   input.className = "champ " + (sectionId === "revenus" ? "revenu" : "depense");
   input.placeholder = "0";
   input.addEventListener("input", calculerSolde);
-
+    
   ligne.appendChild(label);
   ligne.appendChild(input);
   container.appendChild(ligne);
   calculerSolde();
 }
+
+// fonction : calcule de solde
 
 function calculerSolde() {
   const revenus = document.querySelectorAll(".revenu");
@@ -44,3 +48,4 @@ document.querySelectorAll(".champ").forEach(input => {
 });
 
 window.onload = calculerSolde;
+
