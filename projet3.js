@@ -51,7 +51,7 @@ const videos = [
   }
 ];
 
-// Appli : filtrage des vidéos selon l'âge et le niveau scolaire
+// fonction : filtrage des vidéos selon l'âge et le niveau scolaire
 
 function filtrerVideos() {
   const niveau = document.getElementById("niveau").value;
@@ -81,4 +81,5 @@ function filtrerVideos() {
     container.appendChild(card);
   });
 }
+
 
