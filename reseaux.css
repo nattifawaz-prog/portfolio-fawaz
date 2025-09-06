@@ -1,4 +1,4 @@
-/* --- FOND GLOBAL --- */
+/* style appliqué à la page :  couleur + texte */
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* --- SECTION CENTRALE --- */
+/* section centrale */
 .section-contact-social {
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@ body {
   padding: 40px;
 }
 
-/* --- CARTE --- */
+/* affichage de la carte */
 .carte-reseaux {
   background: linear-gradient(135deg, #e3e0ff, #d0f0ff);
   padding: 50px 40px;
@@ -31,7 +31,7 @@ body {
   box-shadow: 0 12px 32px rgba(74, 20, 140, 0.3);
 }
 
-/* --- TITRE --- */
+/* titre */
 .carte-reseaux h1 {
   text-align: center;
   font-size: 32px;
@@ -44,7 +44,7 @@ body {
   color: #7a3a80;
 }
 
-/* --- LIGNES --- */
+/* disposition en ligne des boutons + centrage au milieu de la carte */
 .ligne-reseau {
   display: flex;
   align-items: center;
@@ -52,14 +52,14 @@ body {
   margin-bottom: 20px;
 }
 
-/* --- ICÔNES --- */
+/* icônes des réseaux sociaux */
 .icone-reseau {
   width: 28px;
   height: 28px;
   transition: transform 0.3s ease;
 }
 
-/* --- BOUTONS --- */
+/* affichage des boutons */
 .btn-reseau {
   flex-grow: 1;
   background-color: transparent;
@@ -78,7 +78,7 @@ body {
   align-items: center;
 }
 
-/* --- TEXTE CENTRÉ --- */
+/* centrage du texte inscrit sur les boutons */
 .btn-reseau span {
   display: block;
   width: 100%;
@@ -86,7 +86,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* --- EFFET DRILLANT --- */
+/* effet de brillance */
 .btn-reseau::before {
   content: "";
   position: absolute;
@@ -105,7 +105,7 @@ body {
   opacity: 0.2;
 }
 
-/* --- HOVER --- */
+/* style hover */
 .btn-reseau:hover {
   background-color: #4a148c;
   color: white;
@@ -115,7 +115,8 @@ body {
   transform: scale(1.05);
 }
 
-/* --- ICÔNE ANIMATION --- */
+/* animation appliquée aux icônes */
 .ligne-reseau:hover .icone-reseau {
   transform: scale(1.2) rotate(-5deg);
 }
+
