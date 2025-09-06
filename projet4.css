@@ -108,7 +108,7 @@ button:hover {
 .resultat.bleu { background: var(--bleu); color: #fff; }
 .resultat.gris { background: var(--gris); color: #fff; }
 
-/* 📋 Liste des objets */
+/* Liste des objets */
 .liste-tri {
   list-style: none;
   padding: 0;
@@ -127,7 +127,7 @@ button:hover {
   background-color: #eef2f7;
 }
 
-/* 🖼️ Zone image */
+/* style appliqué à l'image */
 .image-zone {
   margin-top: 1.5rem;
   text-align: center;
@@ -139,3 +139,4 @@ button:hover {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
+
