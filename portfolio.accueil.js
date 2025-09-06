@@ -1,3 +1,5 @@
+// Effet de scroll lors de la navigation
+
 window.addEventListener("scroll", () => {
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".nav a");
@@ -20,6 +22,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
+// Appli : formulaire de contact avec Json
 
 document.querySelector(".formulaire-contact").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -51,3 +54,4 @@ document.querySelector(".formulaire-contact").addEventListener("submit", functio
     feedback.style.color = "red";
   });
 });
+
