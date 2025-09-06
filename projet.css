@@ -100,17 +100,17 @@ body {
   width: 100%;
 }
 
-/* 📏 Espacement quadruplé pour le lien Contact : pour éviter le débordement */
+/* Espacement quadruplé pour le lien Contact : pour éviter le débordement */
 .nav li:last-child {
-  margin-right: 112px; /* ✅ 4x plus que les autres (28px × 4) */
+  margin-right: 112px; /* 4x plus que les autres (28px × 4) */
 }
 
 .cartes-verticales {
   display: flex;
   flex-direction: column;
-  gap: 60px; /* ↗️ Espacement plus généreux entre les cartes */
+  gap: 60px; /* Espacement plus généreux entre les cartes */
   padding: 80px 30px;
-  max-width: 1400px; /* ↗️ Largeur augmentée */
+  max-width: 1400px; /* Largeur augmentée */
   margin: auto;
 }
 
@@ -124,7 +124,7 @@ body {
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 172, 193, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-height: 500px; /* ↗️ Hauteur augmentée */
+  min-height: 500px; /*  Hauteur augmentée */
 }
 
 .grande-carte:hover {
@@ -142,7 +142,7 @@ body {
 }
 
 .contenu-carte h3 {
-  font-size: 2rem; /* ↗️ Titre plus imposant */
+  font-size: 2rem; /* Titre plus imposant */
   margin-bottom: 16px;
   color: var(--accent);
 }
@@ -233,3 +233,4 @@ html {
   color: var(--turquoise-hover);
   text-shadow: 0 0 8px var(--turquoise-hover);
 }
+
