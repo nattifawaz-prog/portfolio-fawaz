@@ -1,3 +1,5 @@
+// récupération des vidéos depuis YouTube
+
 const videos = [
   {
     titre: "Foufou - Les Syllabes",
@@ -49,6 +51,8 @@ const videos = [
   }
 ];
 
+// Appli : filtrage des vidéos selon l'âge et le niveau scolaire
+
 function filtrerVideos() {
   const niveau = document.getElementById("niveau").value;
   const age = parseInt(document.getElementById("age").value);
@@ -77,3 +81,4 @@ function filtrerVideos() {
     container.appendChild(card);
   });
 }
+
